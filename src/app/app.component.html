@@ -1,0 +1,58 @@
+<nav class="bg-blue-900 text-white shadow-md px-6 py-4">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <div class="text-2xl font-bold">ProjectCompete</div>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
+      <li><a href="#" class="hover:text-yellow-400 transition">Competitions</a></li>
+      <li><a href="#" class="hover:text-yellow-400 transition">Submit</a></li>
+      <li><a href="#" class="hover:text-yellow-400 transition">Results</a></li>
+      <li><a href="#" class="hover:text-yellow-400 transition">Contact</a></li>
+    </ul>
+    <div class="hidden md:flex space-x-3">
+      <button
+        class="flex items-center border border-white rounded px-4 py-1 hover:bg-yellow-400 hover:text-blue-900 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15 12H3m0 0l4-4m-4 4l4 4m13-8v8a2 2 0 002 2h-2a2 2 0 01-2-2V8a2 2 0 012-2h2a2 2 0 00-2 2z" />
+        </svg>
+        Login
+      </button>
+      <button class="flex items-center bg-yellow-400 text-blue-900 rounded px-4 py-1 hover:bg-yellow-300 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg>
+        Register
+      </button>
+    </div>
+  </div>
+</nav>
+
+<section class="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
+  style="background-image: url('/assets/images/college.jpg');">
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 text-center px-6">
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+      Welcome to <span class="text-yellow-400">ProjectCompete</span>
+    </h1>
+    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+      Empowering students to showcase their innovations, compete, and shine in project competitions.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a routerLink="/register"
+        class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-md font-semibold hover:bg-yellow-300 transition">
+        Register Now
+      </a>
+      <a routerLink="/competitions"
+        class="border border-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-900 transition">
+        View Competitions
+      </a>
+    </div>
+  </div>
+</section>
+
+<router-outlet></router-outlet>
